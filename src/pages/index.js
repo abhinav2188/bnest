@@ -1,5 +1,11 @@
-import React from "react"
+import React from "react";
+import TopNav from "../components/topNav";
 
-export default function Home() {
-  return <div>Hello world!</div>
+const home = (props) => {
+  return (
+    <div class="w-full h-screen bg-cyan-300">
+      <TopNav></TopNav>
+    </div>
+  );
 }
+export default home;
