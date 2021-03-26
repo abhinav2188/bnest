@@ -5,5 +5,18 @@
  */
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-postcss`],
+  siteMetadata : {
+    title : `Bionest Eco Solutions`,
+    description : `this is site Description`,
+    author: `BioNest Eco Solutions`,
+    socialLinks :{
+      facebook : "www.facebook.com/",
+      instagram : "www.instagrm.com/",
+      phone: "9875757623",
+      email :"bionext@ecosolutons.com"
+    },
+    },
+  pathPrefix: "/bionest",
+
+  plugins: [`gatsby-plugin-postcss`,`gatsby-plugin-react-helmet`],
 }
