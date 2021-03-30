@@ -22,26 +22,26 @@ const TopNav = props => {
         }`
     );
     return (
-        <Container className="divide-y flex flex-col md:pt-4 pt-2">
+        <Container className="fixed divide-y flex flex-col md:pt-4 pt-2 uppercase font-semi-bold z-30" id={props.id}>
         <div className="flex items-center justify-between w-full md:py-4 py-2">
             <div>
-                <img className="md:h-16 h-12" src={logo} alt="BioNestLogo"/>
+                <img className="md:h-16 h-12 px-2" src={logo} alt="BioNestLogo"/>
             </div>
             <div>
-                <Link to={site.siteMetadata.socialLinks.facebook} className="pl-2">
+                <Link to={site.siteMetadata.socialLinks.facebook} className="px-2 transform transition-all duration-200 hover:scale-110">
                     <FontAwesomeIcon icon={faFacebook} className="md:text-xl" />
                 </Link>
-                <Link to={site.siteMetadata.socialLinks.instagram} className="pl-2">
+                <Link to={site.siteMetadata.socialLinks.instagram} className="px-2">
                     <FontAwesomeIcon icon={faInstagram} className="md:text-xl" />
                 </Link>
-                <Link to="#" className="pl-2">
+                <Link to="#" className="px-2">
                     Contact
                 </Link>
             </div>
         </div>
         <div className="flex items-center md:py-4 py-2">
-            <Link to="#" className="md:px-4 pr-4">About</Link>
-            <Link to="#" className="md:px-4 pr-4">Focus Area</Link>
+            <Link to="#" className="md:px-4 px-2">About</Link>
+            <Link to="#" className="md:px-4 px-2">Focus Area</Link>
         </div>
 
         </Container>
