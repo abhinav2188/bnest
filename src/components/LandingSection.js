@@ -9,7 +9,7 @@ import "./component.css"
 
 const LandingSection = props => {
     return (
-        <div className="slant w-full md:py-48 py-32 flex flex-col items-center bg-gradient-to-r from-blue-300 to-green-200 transform skew-y-3">
+        <div className="slant w-full md:py-48 py-32 flex flex-col items-center bg-gradient-to-r from-blue-200 to-green-200 transform skew-y-3">
             <Container className="flex md:flex-row flex-col justify-center transform -skew-y-3">
             <div className="w-1/2 flex justify-center self-center p-4">
                 <img className="md:w-80 w-48" src={sapling} alt="" />
