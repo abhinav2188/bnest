@@ -6,7 +6,9 @@ module.exports = {
       heading:['Dela Gothic One', 'cursive'],
       content:['Poppins', 'sans-serif']
     },
-    extend: {},
+    extend: {
+
+    },
   },
   variants: {
     extend: {},

@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+    @variants responsive{
+        .transition-text-btw{
+            @apply transition-colors text-black hover:text-white
+        }
+        .transition-text-wtb{
+            @apply transition-colors hover:text-black text-white
+        }    
+    }
+}
