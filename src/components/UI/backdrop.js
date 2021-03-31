@@ -1,6 +1,6 @@
 import React from "react";
 import { CSSTransition } from "react-transition-group";
-import "./animations.css";
+import "../../css/animations.css";
 
 const backdrop = (props) => (
   <CSSTransition

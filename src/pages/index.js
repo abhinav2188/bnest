@@ -3,7 +3,7 @@ import TopNav from "../components/TopNav";
 import Head from "../components/SEO";
 import LandingSection from "../components/LandingSection";
 import About from "../components/About"
-import BottomNav from "../components/bottomNav"
+import BottomNav from "../components/BottomNav"
 
 const Home = (props) => {
   const [offsetY,setOffsetY] = useState(0);
