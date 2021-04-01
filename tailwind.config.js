@@ -3,7 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily:{
-      heading:['Dela Gothic One', 'cursive'],
+      heading:['Ultra', 'serif'],
       content:['Poppins', 'sans-serif']
     },
     extend: {

@@ -8,12 +8,11 @@ import BottomNav from "../components/BottomNav"
 const Home = (props) => {
   const [offsetY,setOffsetY] = useState(0);
   const handleScroll = () => {
-    console.log("handleScroll");
+    // console.log("handleScroll");
     setOffsetY(window.pageYOffset);
   }
   useEffect(()=>{
-    document.getElementById("")
-    console.log("useEffect");
+    // console.log("useEffect");
     window.addEventListener("scroll",handleScroll);
     return () => window.removeEventListener("scroll",handleScroll);
   },[]);
@@ -22,8 +21,8 @@ const Home = (props) => {
   return (
     <>
     <Head/>
-    <div className="max-w-screen bg-gray-100 flex flex-col items-center text-gray-800 lg:text-lg overflow-x-hidden ">
-        <TopNav/>
+    <div className="max-w-screen bg-gray-100 flex flex-col items-center text-gray-800 lg:text-lg overflow-x-hidden font-content">
+        <TopNav offsetY={offsetY}/>
         <LandingSection offsetY={offsetY} id="landing-section"/>
         <About />
         <BottomNav/>
