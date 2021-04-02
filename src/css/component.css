@@ -23,12 +23,3 @@
       } 
   };
 
-  .landing{
-    background-image: url("../assets/images/bg1.jpg") ;
-    /* background-color:rgba(255,255,255,0.1); */
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-blend-mode: color; */
-  }
-

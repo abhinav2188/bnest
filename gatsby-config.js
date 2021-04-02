@@ -18,5 +18,11 @@ module.exports = {
     },
   pathPrefix: "/bionest",
 
-  plugins: [`gatsby-plugin-postcss`,`gatsby-plugin-react-helmet`],
+  plugins: [
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+  ],
 }
