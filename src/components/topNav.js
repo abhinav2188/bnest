@@ -62,9 +62,9 @@ const TopNav = props => {
 
     return (
         <>
-        <div className={`z-30 fixed w-full flex justify-center ${flag?"bg-gray-100 md:shadow shadow-sm":""} transition-colors duration-500 `} id={props.id}>
+        <div className={`z-30 fixed w-full flex justify-center ${flag?"md:shadow shadow-sm bg-gray-100 ":""} transition-colors duration-500 `} id={props.id}>
         <Container className={`flex items-center justify-between md:py-4 py-2 uppercase font-semi-bold z-30 md:text-base text-xs`}>
-            <div className="bg-gray-100 rounded-lg p-1">
+            <div className="">
                 <img className="md:h-16 h-12 md:px-2 px-1" src={logo} alt="BioNestLogo"/>
             </div>
             <div className="md:flex items-center hidden ">
@@ -73,7 +73,7 @@ const TopNav = props => {
                 {socialLinks}
                 </div>
             </div>
-            <button className={`md:hidden flex items-center ${flag?"transition-text-btw":"transition-text-wtb"}`} onClick={()=>setShowSlider(true)}>
+            <button className={`md:hidden flex items-center ${flag?"transition-text-btw":"transition-text-wtb"} focus:outline-none`} onClick={()=>setShowSlider(true)}>
             <svg className="fill-current w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384.97 384.97" >
                     <path d="M12.03,120.303h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
                         c-6.641,0-12.03,5.39-12.03,12.03C0,114.913,5.39,120.303,12.03,120.303z"/>
