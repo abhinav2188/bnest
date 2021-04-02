@@ -1,6 +1,6 @@
 import React from "react"
 
-const bottomNav = (props) =>{
+const page404 = (props) =>{
     return (
         <div className="py-24">
             <p>© BioNest Eco Solutions</p>
@@ -9,4 +9,4 @@ const bottomNav = (props) =>{
     );
 }
 
-export default bottomNav;
+export default page404;
