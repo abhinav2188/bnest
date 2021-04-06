@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html{
+        scroll-behavior: smooth;
+    }
+    a, button{
+        @apply focus:outline-none
+    }
+}
+
 @layer utilities{
     .text-gradient-1{
             background: linear-gradient(to right,#09FDB4, #009FFF);

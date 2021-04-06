@@ -6,7 +6,7 @@ const backdrop = (props) => (
   <CSSTransition
     in={props.show}
     classNames="fade"
-    timeout={200}
+    timeout={100}
     mountOnEnter
     unmountOnExit
   >

@@ -5,22 +5,22 @@ import {StaticImage} from "gatsby-plugin-image"
 
 const display = [
     {
-        imgSrc : <StaticImage src="../assets/images/display/bg1.jpg" className="h-screen" placeholder="blurred"/>,
-        description : <p>Vivamus placerat, metus quis efficitur sodales, leo ante facilisis felis, id sodales dui tortor ac metus.</p>
+        imgSrc : <StaticImage src="../assets/images/display/s1.jpg" className="h-screen" placeholder="blurred"/>,
+        description : <p className="text-white">A global issue we need to understand </p>
     },
     {
-        imgSrc : <StaticImage src="../assets/images/display/91352.jpg" className="h-screen" placeholder="blurred"/>,
-        description : <p className="text-white">Nunc hendrerit aliquet faucibus. Maecenas fringilla ac nisl eget interdum. Aenean laoreet dui justo, et imperdiet velit elementum a. Donec tristique</p>
+        imgSrc : <StaticImage src="../assets/images/display/s2.jpeg" className="h-screen" placeholder="blurred"/>,
+        description : <p className="text-white"> Together we can make a difference</p>
     },
     {
-        imgSrc : <StaticImage src="../assets/images/display/close-up-picture-sapling-plant-is-growing.jpg" className="h-screen" placeholder="blurred"/>,
-        description : <p className="text-white">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        imgSrc : <StaticImage src="../assets/images/display/s3.jpg" className="h-screen" placeholder="blurred"/>,
+        description : <p className="text-white">Commited to offer sustainable solutions</p>
     },
 ]
 
 const LandingSection = props => {
     return (
-        <div className="w-full h-screen">
+        <div className="w-full h-screen" id="home">
             {/* <StaticImage src="../assets/images/display/bg1.jpg" className="h-screen" placeholder="blurred"/> */}
             <Carousel elements={display}/>
         </div>

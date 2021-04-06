@@ -4,6 +4,7 @@ import Head from "../components/SEO";
 import LandingSection from "../components/LandingSection";
 import About from "../components/About"
 import BottomNav from "../components/BottomNav"
+import Products from "../components/Products"
 
 const Home = (props) => {
   const [offsetY,setOffsetY] = useState(0);
@@ -17,7 +18,8 @@ const Home = (props) => {
     return () => window.removeEventListener("scroll",handleScroll);
   },[]);
 
-
+  
+  
   return (
     <>
     <Head/>
@@ -25,6 +27,7 @@ const Home = (props) => {
         <TopNav offsetY={offsetY}/>
         <LandingSection offsetY={offsetY} id="landing-section"/>
         <About />
+        <Products />
         <BottomNav/>
     </div>
     </>
