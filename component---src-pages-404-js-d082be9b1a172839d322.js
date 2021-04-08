@@ -1,0 +1,2 @@
+(self.webpackChunkbionest_eco_solutions=self.webpackChunkbionest_eco_solutions||[]).push([[883],{9616:function(e,t,l){"use strict";l.r(t);var n=l(7294),s=l(6896),c=l(6044);t.default=function(e){return n.createElement("div",{className:"flex flex-col min-h-screen"},n.createElement(s.Z,null),n.createElement("div",{className:"flex-grow"},n.createElement("p",{className:"text-4xl text-green-500"},"404 Not Found")),n.createElement(c.Z,null))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-d082be9b1a172839d322.js.map
