@@ -18,7 +18,7 @@ const TopNav = props => {
 
     const NavLink = (props) => {
         return (
-            <a href={props.to} className={`${props.className} md:px-4 px-2 md:py-2 py-4  md:transition-text-btw transition-text-wtb `} >{props.children}</a>
+            <a href={props.to} className={`${props.className} lg:px-4 px-2 md:py-2 py-4 md:transition-text-btw transition-text-wtb `} >{props.children}</a>
         );
     }
 

@@ -29,7 +29,7 @@ return(
                         {el.imgSrc}
                     </div>
                     <div className={`flex flex-col md:w-2/5 w-1/2 transition-all absolute md:top-1/3 md:left-1/2 top-1/3 left-1/4 ${activeIndex===id?"opacity-100 ":"opacity-0 scale-125"} duration-1000 delay-500`}>
-                        <p className="py-4 font-bold tracking-wide md:text-7xl text-3xl">{el.description}</p>
+                        <p className="py-4 font-bold tracking-wide lg:text-7xl md:text-5xl text-2xl">{el.description}</p>
                     </div>
                 </div>
             ))

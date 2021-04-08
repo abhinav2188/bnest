@@ -27,15 +27,16 @@ const BottomNav = (props) =>{
         </svg>
 
         </div>
-            <Container className="flex md:flex-row flex-col md:px-16 px-4 justify-around">
-                <div className="flex flex-col md:px-8 px-4 divide-y items-start md:w-1/2 py-4 my-8 font-sans">
-                    <h3 className="md:py-8 py-4 font-normal text-gradient-2 self-center uppercase">Contact</h3>
+            <Container className="flex lg:flex-row flex-col justify-around">
+                <div className="flex flex-col md:px-8 px-4 divide-y items-start lg:w-1/2 py-4 my-8 font-sans">
+                    <h3 className="md:py-12 py-8 font-normal text-gradient-2 self-center uppercase">Contact</h3>
                     <img className="md:h-32 h-20 py-2" src={logo} alt="BIONEST ECO SOLUTIONS"/>
                     <p className="py-2">{site.siteMetadata.address}</p>
+                    <p className="py-2">{site.siteMetadata.phone}</p>
                     <p className="py-2">{site.siteMetadata.email}</p>
                 </div>
-                <div className="flex flex-col md:w-96 md:px-8 px-4 py-4 shadow rounded-sm my-8 ">
-                    <h3 className="md:py-8 py-4 font-normal text-gradient-2 self-center uppercase font-400">Write us a Query!</h3>                
+                <div className="flex flex-col lg:w-96 md:px-8 px-4 py-4 shadow rounded-sm my-8 ">
+                    <h3 className="md:py-12 py-8 font-normal text-gradient-2 self-center uppercase font-400">Write us a Query!</h3>                
                     <ContactForm/>
                 </div>
             </Container>

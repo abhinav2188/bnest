@@ -10,7 +10,7 @@ module.exports = {
     description : `Eco friendly solutions for your problems`,
     author: `BioNest Eco Solutions`,
     address :`401, NDM-2 Building, Netaji Subhash Place, Pitampura, Delhi-110034, INDIA`,
-    phone: "9875757623",
+    phone: "+91-7042013539",
     email :"bionesteco@gmail.com",
   socialLinks :{
       facebook : "#",
@@ -18,7 +18,8 @@ module.exports = {
       skype : "anuj.mittal227"
     },
     },
-  pathPrefix: "/bionest",
+  // assetPrefix: `bionesteco.com`,
+  pathPrefix: `/bionest`,
 
   plugins: [
     {

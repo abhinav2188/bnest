@@ -9,11 +9,11 @@ const display = [
     },
     {
         imgSrc : <StaticImage src="../assets/images/display/s2.jpeg" className="h-screen" placeholder="blurred" alt=""/>,
-        description : <p className="text-white transform md:translate-x-0 translate-x-16"> Together we can make a difference</p>
+        description : <p className="text-white transform lg:translate-x-0 translate-x-16"> Together we can make a difference</p>
     },
     {
         imgSrc : <StaticImage src="../assets/images/display/s3.jpg" className="h-screen" placeholder="blurred" alt=""/>,
-        description : <p className="text-white transform translate-y-32">Commited to offer sustainable solutions</p>
+        description : <p className="text-white transform lg:translate-y-32 translate-y-16">Commited to offer sustainable solutions</p>
     },
 ]
 
