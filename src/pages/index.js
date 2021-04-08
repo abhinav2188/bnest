@@ -23,7 +23,7 @@ const Home = (props) => {
   return (
     <>
     <Head/>
-    <div className="max-w-screen bg-gray-100 flex flex-col items-center text-gray-800 lg:text-lg overflow-x-hidden font-content">
+    <div className="max-w-screen bg-white flex flex-col items-center text-gray-800 lg:text-lg overflow-x-hidden font-content">
         <TopNav offsetY={offsetY}/>
         <LandingSection offsetY={offsetY} id="landing-section"/>
         <About />

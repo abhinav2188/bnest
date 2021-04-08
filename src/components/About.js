@@ -8,9 +8,9 @@ import {StaticImage} from "gatsby-plugin-image"
 const About = props => {
     return (
         <Container className="mt-32 mb-16 md:px-16 px-4 " id="about">
-            <div className="flex flex-col md:text-right rounded-lg shadow-lg overflow-hidden">
-            <StaticImage className="md:h-48 h-24" src="../assets/images/about.jpeg" placeholder="blurred"/>
-            <div className="flex md:text-right flex-col md:w-3/5 lg:px-8 px-4 py-4 ">
+            <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <StaticImage className="md:h-96 h-48" src="../assets/images/about.jpeg" placeholder="blurred"/>
+            <div className="flex flex-col md:w-3/5 lg:px-16 px-4 py-4 ">
                 <h1 className="text-gradient-1 md:text-6xl text-4xl leading-none md:py-16 py-8 text-green-500 font-black ">About Us</h1>
                 <p className="py-2">With a legacy of more than 50 years in paper industry we strive to provide sustainable alternatives to single use plastics and non biodegradable products. </p>
                 <p className="py-2">Our vision and mission is to be the one stop solution provider with recyclable,  compostable and environment friendly products and techniques and closing the gates to the landfill for a greener and sustainable future.</p>

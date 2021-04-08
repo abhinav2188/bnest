@@ -5,18 +5,19 @@ import "../../css/animations.css"
 const Carousel = (props) =>{
     const [activeIndex,setActiveIndex] = useState(0);
     const nextElement = ()=>{
-        console.log("next");
-        console.log(activeIndex);
+        // console.log("next");
         setActiveIndex((activeIndex+1)%props.elements.length);
+        // console.log(activeIndex);
     } 
     const prevElement = ()=>{
         setActiveIndex((activeIndex-1)<0?(activeIndex-1+props.elements.length):(activeIndex-1));
     } 
+    // const auto = () => {
+    //     const id = setInterval(nextElement, 5000);
+    //     return id;
+    // };
     // useEffect(()=>{
-    //     const id = setInterval(()=>{
-    //         console.log("trigger Next");
-    //         nextElement();
-    //     },10000);
+    //     const id = auto();
     //     return () => clearInterval(id);
     // },[])
 return(
@@ -27,9 +28,8 @@ return(
                     <div className={`transition-all absolute w-full ${activeIndex===id?"flex opacity-100 ":"opacity-0 scale-125"} duration-1000`}>
                         {el.imgSrc}
                     </div>
-                    <div className={`flex flex-col md:w-1/4 w-1/2 transition-all absolute md:top-1/3 md:left-1/3 top-1/4 left-1/4 ${activeIndex===id?"opacity-100 ":"opacity-0 scale-125"} duration-1000 delay-500`}>
-                        <p className="py-4">{id+1}/{props.elements.length}</p>
-                        <p className="py-4 font-bold tracking-wide md:text-2xl text-xl">{el.description}</p>
+                    <div className={`flex flex-col md:w-2/5 w-1/2 transition-all absolute md:top-1/3 md:left-1/2 top-1/3 left-1/4 ${activeIndex===id?"opacity-100 ":"opacity-0 scale-125"} duration-1000 delay-500`}>
+                        <p className="py-4 font-bold tracking-wide md:text-7xl text-3xl">{el.description}</p>
                     </div>
                 </div>
             ))

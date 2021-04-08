@@ -11,7 +11,7 @@ module.exports = {
     author: `BioNest Eco Solutions`,
     address :`401, NDM-2 Building, Netaji Subhash Place, Pitampura, Delhi-110034, INDIA`,
     phone: "9875757623",
-    email :"bionest@ecosolutons.com",
+    email :"bionesteco@gmail.com",
   socialLinks :{
       facebook : "#",
       instagram : "#",
