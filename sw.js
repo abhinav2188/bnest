@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-6fc52884dd23ff0467a9.js"
+    "url": "webpack-runtime-bed55249448fb1514574.js"
   },
   {
     "url": "styles.edaaef43741df594f059.css"
@@ -36,29 +36,21 @@ self.__precacheManifest = [
     "url": "framework-43c199b8f798dc497be1.js"
   },
   {
-    "url": "app-b5235e055a05b685746a.js"
+    "url": "app-de587d532067b146990b.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "464e5156aa95560da972d682119b4be3"
+    "revision": "c01c94b283d1fabc8af6560fa23b95ee"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-9cc01b97cfa5a1ba3b1e.js"
-  },
-  {
-    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "f6081b83111aea4128c98944b7fafccc"
-  },
-  {
-    "url": "page-data/app-data.json",
-    "revision": "30b87893df8bbdd4b1d8a53235a03502"
   },
   {
     "url": "polyfill-31b79f13c8a710792913.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "82a06ca0d2a9161be0f9c415faeced6f"
+    "revision": "54a6d2c08241f12c8bdabd673aeeb89f"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -145,12 +137,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/bionest`), ``)
+  pathname = pathname.replace(new RegExp(`^`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/bionest/app-b5235e055a05b685746a.js`))) {
+  if (!resources || !(await caches.match(`/app-de587d532067b146990b.js`))) {
     return await fetch(event.request)
   }
 
@@ -163,7 +155,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/bionest/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
